@@ -185,5 +185,23 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="file.js"></script>
+            <script>
+                /* LOADING THE DOCUMENT */
+$(document).ready(function () {
+
+    /* USING MOUSE HOVER EVENT FOR CHANGING THE LOGO */
+    $("#logo").hover(function(){
+        $("#logo").attr("src","brandstar-images/brandstar-Logo-2.png");
+    },function(){
+        $("#logo").attr("src","brandstar-images/brandstar-Logo-1.png");
+    });
+
+    /* HAMBURGER TOGGLE */
+    $(".hamburger_menu").on("click", function () {
+        $("#nav_container").slideToggle();
+        $(".hamburger_menu").toggleClass("toggle");
+    });
+});
+            </script>
     </body>
 </html>
